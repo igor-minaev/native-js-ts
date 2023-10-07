@@ -5,3 +5,23 @@ const predicate = (age: number) => {
 }
 
 const oldAges = [100] // > 90
+
+export type CourseType = {
+    title: string
+    price: number
+}
+
+const courses = [
+    {title: 'css', price: 100},
+    {title: 'js', price: 200},
+    {title: 'react', price: 150}
+]
+
+const cheapPredicate = (course: CourseType) => {
+    return course.price < 160
+}
+
+const cheapCourses = [
+    {title: 'css', price: 100},
+    {title: 'react', price: 150}
+]
