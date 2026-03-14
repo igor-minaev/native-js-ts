@@ -6,7 +6,7 @@ const predicate = (age: number) => {
 
 const oldAges = [100] // > 90
 
-type CourseType = {
+export type CourseType = {
     title: string
     price: number
 }
@@ -17,8 +17,8 @@ const courses = [
     {title: "react", price: 150}
 ]
 
-const cheepPredicate = (course: CourseType) => {
+const cheapPredicate = (course: CourseType) => {
     return course.price < 160
 }
 
-const cheepCourses = [{title: "css", price: 100}, {title: "react", price: 150}]
+const cheapCourses = [{title: "css", price: 100}, {title: "react", price: 150}]
